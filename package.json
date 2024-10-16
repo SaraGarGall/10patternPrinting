@@ -8,8 +8,5 @@
   },
   "author": "",
   "private": true,
-  "type": "module",
-  "dependencies": {
-    "inquirer": "^12.0.0"
-  }
+  "type": "module"
 }
