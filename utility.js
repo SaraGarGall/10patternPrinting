@@ -1,18 +1,11 @@
-// PROBLEM: La ultima linea tiene el mismo length que la penultima. Hay que eliminarla o incrementarla en uno.
-
 export function triangle() {
   let width = 10;
   let star = "*";
-  let stars = star;
+  let concatedStars = star;
 
-  for (let i = 0; stars.length < width; i = 0) {
-    //To add two stars every line, except the first line.
-    if (stars.length == 1) {
-      stars = "*" + '\n'; //No se como quitar el salto desde la 1ª a la 2ª linea
-    } else {
-      stars = star.repeat(stars.length + 1)/*+ '\n'*/; //Asi quito los espacios de linea tan grandes
-    }
-    console.log(stars);
+  for (let i = 0; concatedStars.length < width; i++) {
+    concatedStars = star.repeat(i + 1);
+    console.log(concatedStars);
   }
-  return stars;
+  return concatedStars;
 }
